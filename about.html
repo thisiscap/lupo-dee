@@ -5,35 +5,108 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Change these things-->
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<title>Lupo Studio – About</title>
 
 	<!--Links to external things-->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Roboto:400">
 
-	<title>Lupo Studio</title>
-	<!--	Change background colours here-->
+	<!--Favicons and Android theme colour-->
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#B6FCE6">
+	<meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#B6FCE6">
+
+	<!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 	<style>
 		html {
-			background-color: red;
+			/* Change background colours here*/
+			background-color: #ED2875;
+		}
+		
+		nav a {
+			border-bottom-color: #B6FCE6;
+			color: #B6FCE6;
+			font-size: 3rem;
+		}
+		
+		h3,
+		p {
+			text-align: left;
+		}
+		
+		h3 {
+			color: #B6FCE6;
+			font-size: 2rem;
+		}
+		
+		p {
+			color: white;
+			font-size: 1.3rem;
+		}
+		
+		@media (min-width: 700px) {
+			nav a {
+				font-size: 5rem;
+			}
+			h3,
+			p {
+				display: inline-block;
+			}
+			h3 {
+				margin: 0;
+				text-align: right;
+				vertical-align: top;
+			}
+			p {
+				margin: 0 0 0 3rem;
+			}
 		}
 	</style>
 
 </head>
 
 <body>
+	<!--Needed for smooth transitions-->
 	<script>
 		document.body.className += ' fade-out';
 	</script>
-	<section id="main">
+	<section>
 		<nav>
 			<a href="index.html">studiolupo</a>
-			<a href="about.html">about</a>
 		</nav>
-		<article></article>
+		<article>
+			<h3>contact<br>stuff</h3>
+			<p>Visual storytelling for music, arts and culture.
+				<br>Specialising in art direction, film and installation.
+				<br>Conceptual, considered and colourful outcomes.
+				<br>
+				<br>Brighton + London + Alicante</p>
+		</article>
 	</section>
-	<!--	Stuff for smooth transitions between pages-->
+	<!--Needed for smooth transitions-->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script>
 		$(function() {
