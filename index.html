@@ -11,16 +11,21 @@
 	<!--Links to external things-->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="http://brick.a.ssl.fastly.net/Roboto:400">
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/jquery.smoothState.js"></script>
-
 
 	<title>Lupo Studio</title>
+	<!--	Change background colours here-->
+	<style>
+		html {
+			background-color: blue;
+		}
+	</style>
 
 </head>
 
 <body>
+	<script>
+		document.body.className += ' fade-out';
+	</script>
 	<section id="main">
 		<nav>
 			<a href="index.html">studiolupo</a>
@@ -31,7 +36,14 @@
 		</video>
 		<article></article>
 	</section>
-	<script>$('#main').smoothState()</script>
+	<!--	Stuff for smooth transitions between pages-->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script>
+		$(function() {
+			$('body').removeClass('fade-out');
+		});
+	</script>
+
 </body>
 
 </html>

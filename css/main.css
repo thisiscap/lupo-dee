@@ -2,6 +2,17 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #B6FCE6;
 }
+
+body {
+			opacity: 1;
+			transition: 1s opacity;
+		}
+		
+		body.fade-out {
+			opacity: 0;
+			transition: none;
+		}
+
 section {
 	text-align: center;
 	width: 100%;
