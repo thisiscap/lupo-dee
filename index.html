@@ -43,34 +43,48 @@
 	<style>
 		html {
 			/* Change background colours here*/
-			background-color: #B6FCE6;
+			background-color: #b6fce6;
 		}
 		
 		nav a {
-			border-bottom-color: #ED2875;
-			color: black;
-			float: left;
 			font-size: 2rem;
+			float: left;
+			color: black;
+			border-bottom-color: #ed2875;
 		}
 		
-		video {
-			border: 6px solid #ED2875;
+		.video-position-guide {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		
+		.video-position {
+			position: absolute;
 			top: 50%;
 			left: 50%;
+			width: 90%;
 			max-width: 800px;
-			position: absolute;
+			-webkit-transform: translateX(-50%)translateY(-50%);
 			transform: translateX(-50%)translateY(-50%);
-			width: calc(100% - 2rem);
-			z-index: -10;
 		}
 		
 		.video-wrapper {
+			box-shadow: 0px 0px 0px 6px #ed2875;
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+		}
+		
+		.video-wrapper > * {
 			position: absolute;
 			top: 0;
 			left: 0;
-			right: 0;
-			bottom: 0;
-			z-index: -1000;
+			width: 100%;
+			height: 100%;
 		}
 		
 		@media (min-width: 700px) {
@@ -92,18 +106,18 @@
 			<a href="index.html">studiolupo</a>
 			<a href="about.html">about</a>
 		</nav>
-		<div class="video-wrapper">
-			<video id="Lupo Studio" poster="assets/lupo-studio.gif" preload autoplay loop>
-				<source src="assets/lupo-studio.mp4" type="video/mp4">
-				<source src="assets/lupo-studio.webm" type="video/webm">
-				<source src="assets/lupo-studio.ogg" type="video/ogg">
-			</video>
+		<div class="video-position-guide">
+			<div class="video-position">
+				<div class="video-wrapper">
+					<iframe src="https://player.vimeo.com/video/162068837?autoplay=1&loop=1&color=ff0179&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--Needed for smooth transitions-->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script>
-		$(function() {
+		$(function () {
 			$('body').removeClass('fade-out');
 		});
 	</script>
