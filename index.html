@@ -55,7 +55,22 @@
 		
 		video {
 			border: 6px solid #ED2875;
+			top: 50%;
+			left: 50%;
+			max-width: 800px;
+			position: absolute;
+			transform: translateX(-50%)translateY(-50%);
 			width: calc(100% - 2rem);
+			z-index: -10;
+		}
+		
+		.video-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1000;
 		}
 		
 		@media (min-width: 700px) {
@@ -77,13 +92,13 @@
 			<a href="index.html">studiolupo</a>
 			<a href="about.html">about</a>
 		</nav>
-		<article>
+		<div class="video-wrapper">
 			<video id="Lupo Studio video" poster="" preload autoplay loop>
 				<source src="assets/video.mp4" type="video/mp4">
 				<source src="assets/video.webm" type="video/webm">
 				<source src="assets/video.ogg" type="video/ogg">
 			</video>
-		</article>
+		</div>
 	</section>
 	<!--Needed for smooth transitions-->
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

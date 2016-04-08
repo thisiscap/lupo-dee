@@ -4,10 +4,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	opacity: 1;
+	-webkit-transition: 1s opacity;
 	transition: 1s opacity;
 }
 .fade-out {
 	opacity: 0;
+	-webkit-transition: none;
 	transition: none;
 }
 section {
